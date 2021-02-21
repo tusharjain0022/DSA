@@ -16,7 +16,7 @@ Step 3: If the current element is less than the next element, move to the next e
 n = size of array
 loop (i = 0 to i = n-1):
     loop(j = 0 to j = n-2):
-        if array[j] array[j+1] :
+        if array[j] > array[j+1] :
             swap(array[j],array[j+1])
 ```
 
