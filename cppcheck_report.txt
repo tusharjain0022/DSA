@@ -1,0 +1,5 @@
+Searching Algorithm/Binary Search/BinarySearch.cpp:6:36: style: The scope of the variable 'mid' can be reduced. [variableScope]
+    int start = 0, end = size - 1, mid;
+                                   ^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingIncludeSystem]
+
