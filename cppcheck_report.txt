@@ -1,5 +1,146 @@
+CSES/DP/CountingTiling.cpp:40:16: style: Consider using std::accumulate algorithm instead of a raw loop. [useStlAlgorithm]
+        answer = (answer + solve(n, m, i + 1, j)) % 1000000007;
+               ^
+CSES/DP/CountingTowers.cpp:25:5: warning: Return value of function freopen() is not used. [ignoredReturnValue]
+    freopen("../input.txt", "r", stdin);
+    ^
+CSES/DP/CountingTowers.cpp:26:5: warning: Return value of function freopen() is not used. [ignoredReturnValue]
+    freopen("../output.txt", "w", stdout);
+    ^
+CSES/DP/RemovalGame.cpp:17:5: warning: Return value of function freopen() is not used. [ignoredReturnValue]
+    freopen("../input.txt", "r", stdin);
+    ^
+CSES/DP/RemovalGame.cpp:18:5: warning: Return value of function freopen() is not used. [ignoredReturnValue]
+    freopen("../output.txt", "w", stdout);
+    ^
+CSES/Graph/1.cpp:14:4: warning: Return value of function freopen() is not used. [ignoredReturnValue]
+   freopen("../../input.txt", "r", stdin);
+   ^
+CSES/Graph/1.cpp:15:4: warning: Return value of function freopen() is not used. [ignoredReturnValue]
+   freopen("../../output.txt", "w", stdout);
+   ^
+CSES/Graph/2.cpp:48:21: warning: Redundant assignment of 'ans' to itself. [selfAssignment]
+                ans = ans = (ans+DFS(next_x, next_y))%mod;
+                    ^
+CSES/Graph/BuildingRoads.cpp:23:4: warning: Return value of function freopen() is not used. [ignoredReturnValue]
+   freopen("../../input.txt", "r", stdin);
+   ^
+CSES/Graph/BuildingRoads.cpp:24:4: warning: Return value of function freopen() is not used. [ignoredReturnValue]
+   freopen("../../output.txt", "w", stdout);
+   ^
+CSES/Graph/BuildingTeams.cpp:35:4: warning: Return value of function freopen() is not used. [ignoredReturnValue]
+   freopen("../../input.txt", "r", stdin);
+   ^
+CSES/Graph/BuildingTeams.cpp:36:4: warning: Return value of function freopen() is not used. [ignoredReturnValue]
+   freopen("../../output.txt", "w", stdout);
+   ^
+CSES/Graph/CountingRoom.cpp:33:5: warning: Return value of function freopen() is not used. [ignoredReturnValue]
+    freopen("../../input.txt", "r", stdin);
+    ^
+CSES/Graph/CountingRoom.cpp:34:5: warning: Return value of function freopen() is not used. [ignoredReturnValue]
+    freopen("../../output.txt", "w", stdout);
+    ^
+CSES/Graph/FlightDiscount.cpp:24:4: warning: Return value of function freopen() is not used. [ignoredReturnValue]
+   freopen("../../input.txt", "r", stdin);
+   ^
+CSES/Graph/FlightDiscount.cpp:25:4: warning: Return value of function freopen() is not used. [ignoredReturnValue]
+   freopen("../../output.txt", "w", stdout);
+   ^
+CSES/Graph/HighScore.cpp:14:4: warning: Return value of function freopen() is not used. [ignoredReturnValue]
+   freopen("../../input.txt", "r", stdin);
+   ^
+CSES/Graph/HighScore.cpp:15:4: warning: Return value of function freopen() is not used. [ignoredReturnValue]
+   freopen("../../output.txt", "w", stdout);
+   ^
+CSES/Graph/Labyrinthm.cpp:49:4: warning: Return value of function freopen() is not used. [ignoredReturnValue]
+   freopen("../../input.txt", "r", stdin);
+   ^
+CSES/Graph/Labyrinthm.cpp:50:4: warning: Return value of function freopen() is not used. [ignoredReturnValue]
+   freopen("../../output.txt", "w", stdout);
+   ^
+CSES/Graph/MessageRoute.cpp:38:4: warning: Return value of function freopen() is not used. [ignoredReturnValue]
+   freopen("../../input.txt", "r", stdin);
+   ^
+CSES/Graph/MessageRoute.cpp:39:4: warning: Return value of function freopen() is not used. [ignoredReturnValue]
+   freopen("../../output.txt", "w", stdout);
+   ^
+CSES/Graph/Monsters.cpp:58:4: warning: Return value of function freopen() is not used. [ignoredReturnValue]
+   freopen("../../input.txt", "r", stdin);
+   ^
+CSES/Graph/Monsters.cpp:59:4: warning: Return value of function freopen() is not used. [ignoredReturnValue]
+   freopen("../../output.txt", "w", stdout);
+   ^
+CSES/Graph/Monsters.cpp:29:33: style: Parameter 'monsters' can be declared with const [constParameter]
+void BFS(vector<pair<int,int>> &monsters){
+                                ^
+CSES/Graph/RoundTrip.cpp:34:4: warning: Return value of function freopen() is not used. [ignoredReturnValue]
+   freopen("../../input.txt", "r", stdin);
+   ^
+CSES/Graph/RoundTrip.cpp:35:4: warning: Return value of function freopen() is not used. [ignoredReturnValue]
+   freopen("../../output.txt", "w", stdout);
+   ^
+CSES/Graph/ShortestRoutes-1.cpp:14:4: warning: Return value of function freopen() is not used. [ignoredReturnValue]
+   freopen("../../input.txt", "r", stdin);
+   ^
+CSES/Graph/ShortestRoutes-1.cpp:15:4: warning: Return value of function freopen() is not used. [ignoredReturnValue]
+   freopen("../../output.txt", "w", stdout);
+   ^
+CSES/Graph/ShortestRoutes-2.cpp:14:4: warning: Return value of function freopen() is not used. [ignoredReturnValue]
+   freopen("../../input.txt", "r", stdin);
+   ^
+CSES/Graph/ShortestRoutes-2.cpp:15:4: warning: Return value of function freopen() is not used. [ignoredReturnValue]
+   freopen("../../output.txt", "w", stdout);
+   ^
+CSES/Introductory Problems/AppleDivision.cpp:21:4: warning: Return value of function freopen() is not used. [ignoredReturnValue]
+   freopen("../../input.txt", "r", stdin);
+   ^
+CSES/Introductory Problems/AppleDivision.cpp:22:4: warning: Return value of function freopen() is not used. [ignoredReturnValue]
+   freopen("../../output.txt", "w", stdout);
+   ^
+CSES/Introductory Problems/AppleDivision.cpp:27:12: style: Variable 'bit' is assigned a value that is never used. [unreadVariable]
+   lli bit = 1 << n,apple[n],ans = 0,sum=0;
+           ^
+CSES/Introductory Problems/ChessboardAndQueens.cpp:47:4: warning: Return value of function freopen() is not used. [ignoredReturnValue]
+   freopen("../../input.txt", "r", stdin);
+   ^
+CSES/Introductory Problems/ChessboardAndQueens.cpp:48:4: warning: Return value of function freopen() is not used. [ignoredReturnValue]
+   freopen("../../output.txt", "w", stdout);
+   ^
+CSES/Introductory Problems/CreatingStrings.cpp:39:14: style: Local variable 's' shadows outer variable [shadowVariable]
+   for (auto s:ans){
+             ^
+CSES/Introductory Problems/CreatingStrings.cpp:33:11: note: Shadowed declaration
+   string s;
+          ^
+CSES/Introductory Problems/CreatingStrings.cpp:39:14: note: Shadow variable
+   for (auto s:ans){
+             ^
+CSES/Introductory Problems/NumberSpiral.cpp:14:4: warning: Return value of function freopen() is not used. [ignoredReturnValue]
+   freopen("../../input.txt", "r", stdin);
+   ^
+CSES/Introductory Problems/NumberSpiral.cpp:15:4: warning: Return value of function freopen() is not used. [ignoredReturnValue]
+   freopen("../../output.txt", "w", stdout);
+   ^
+CSES/Tree/Subordinates.cpp:27:4: warning: Return value of function freopen() is not used. [ignoredReturnValue]
+   freopen("../../input.txt", "r", stdin);
+   ^
+CSES/Tree/Subordinates.cpp:28:4: warning: Return value of function freopen() is not used. [ignoredReturnValue]
+   freopen("../../output.txt", "w", stdout);
+   ^
+CSES/Tree/Subordinates.cpp:18:18: style: Consider using std::accumulate algorithm instead of a raw loop. [useStlAlgorithm]
+            temp += (solve(next, tree)+1);
+                 ^
+CSES/Tree/TreeDiameter.cpp:41:4: warning: Return value of function freopen() is not used. [ignoredReturnValue]
+   freopen("../../input.txt", "r", stdin);
+   ^
+CSES/Tree/TreeDiameter.cpp:42:4: warning: Return value of function freopen() is not used. [ignoredReturnValue]
+   freopen("../../output.txt", "w", stdout);
+   ^
 Searching Algorithm/Binary Search/BinarySearch.cpp:6:36: style: The scope of the variable 'mid' can be reduced. [variableScope]
     int start = 0, end = size - 1, mid;
                                    ^
+testing.cpp:5:11: style: Variable 'n' is assigned a value that is never used. [unreadVariable]
+    int n = 0, a = 4;
+          ^
 nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingIncludeSystem]
 
