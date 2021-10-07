@@ -1,3 +1,192 @@
+Assignment/CP_10.cpp:20:7: style:inconclusive: Technically the member function 'String::display' can be const. [functionConst]
+ void display(void)
+      ^
+Assignment/CP_10.cpp:17:2: warning: Class 'String' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s). [noCopyConstructor]
+ name= new char[length + 1];
+ ^
+Assignment/CP_10.cpp:17:2: warning: Class 'String' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s). [noOperatorEq]
+ name= new char[length + 1];
+ ^
+Assignment/CP_10.cpp:17:2: warning: Class 'String' does not have a destructor which is recommended since it has dynamic memory/resource allocation(s). [noDestructor]
+ name= new char[length + 1];
+ ^
+Assignment/CP_10.cpp:14:2: style: Class 'String' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+ String (char *s)
+ ^
+Assignment/CP_10.cpp:29:2: error: Mismatching allocation and deallocation: String::name [mismatchAllocDealloc]
+ delete name;
+ ^
+Assignment/CP_10.cpp:30:2: error: Mismatching allocation and deallocation: String::name [mismatchAllocDealloc]
+ name = new char [length + 1];
+ ^
+Assignment/CP_10.cpp:6:8: style: Class 'String' is unsafe, 'String::name' can leak by wrong usage. [unsafeClassCanLeak]
+ char *name;
+       ^
+Assignment/CP_10.cpp:26:30: style: Parameter 'a' can be declared with const [constParameter]
+void String :: join (String &a, String &b)
+                             ^
+Assignment/CP_10.cpp:26:41: style: Parameter 'b' can be declared with const [constParameter]
+void String :: join (String &a, String &b)
+                                        ^
+Assignment/CP_2.cpp:4:1: style: The class 'ITEMS' does not have a constructor although it has private member variables. [noConstructor]
+class ITEMS
+^
+Assignment/CP_2.cpp:12:7: style:inconclusive: Technically the member function 'ITEMS::displaySum' can be const. [functionConst]
+ void displaySum(void);
+      ^
+Assignment/CP_2.cpp:24:15: note: Technically the member function 'ITEMS::displaySum' can be const.
+void ITEMS :: displaySum(void)
+              ^
+Assignment/CP_2.cpp:12:7: note: Technically the member function 'ITEMS::displaySum' can be const.
+ void displaySum(void);
+      ^
+Assignment/CP_2.cpp:14:7: style:inconclusive: Technically the member function 'ITEMS::displayItems' can be const. [functionConst]
+ void displayItems(void);
+      ^
+Assignment/CP_2.cpp:40:15: note: Technically the member function 'ITEMS::displayItems' can be const.
+void ITEMS :: displayItems(void)
+              ^
+Assignment/CP_2.cpp:14:7: note: Technically the member function 'ITEMS::displayItems' can be const.
+ void displayItems(void);
+      ^
+Assignment/CP_3.cpp:3:1: style: The class 'employee' does not have a constructor although it has private member variables. [noConstructor]
+class employee
+^
+Assignment/CP_3.cpp:9:7: style:inconclusive: Technically the member function 'employee::putdata' can be const. [functionConst]
+ void putdata(void);
+      ^
+Assignment/CP_3.cpp:18:18: note: Technically the member function 'employee::putdata' can be const.
+void employee :: putdata(void)
+                 ^
+Assignment/CP_3.cpp:9:7: note: Technically the member function 'employee::putdata' can be const.
+ void putdata(void);
+      ^
+Assignment/CP_4.cpp:4:1: style: The class 'XYZ' does not have a constructor although it has private member variables. [noConstructor]
+class XYZ
+^
+Assignment/CP_4.cpp:14:1: style: The class 'ABC' does not have a constructor although it has private member variables. [noConstructor]
+class ABC
+^
+Assignment/CP_5.cpp:11:2: performance: Variable 'name' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList]
+ name = a;
+ ^
+Assignment/CP_5.cpp:15:2: performance: Variable 'name' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList]
+ name = x.name;
+ ^
+Assignment/CP_5.cpp:17:7: style:inconclusive: Technically the member function 'run::display' can be const. [functionConst]
+ void display(void)
+      ^
+Assignment/CP_5.cpp:9:2: style: Class 'run' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+ run(string a)
+ ^
+Assignment/CP_5.cpp:9:13: performance: Function parameter 'a' should be passed by const reference. [passedByValue]
+ run(string a)
+            ^
+Assignment/CP_5.cpp:13:12: style: Parameter 'x' can be declared with const [constParameter]
+ run(run & x)
+           ^
+Assignment/CP_6.cpp:9:2: warning:inconclusive: Member variable 'complex::real' is not initialized in the constructor. [uninitMemberVar]
+ complex( )
+ ^
+Assignment/CP_6.cpp:9:2: warning:inconclusive: Member variable 'complex::imag' is not initialized in the constructor. [uninitMemberVar]
+ complex( )
+ ^
+Assignment/CP_6.cpp:31:7: style:inconclusive: Technically the member function 'complex::displaydata' can be const. [functionConst]
+ void displaydata( )
+      ^
+Assignment/CP_6.cpp:36:10: style:inconclusive: Technically the member function 'complex::operator+' can be const. [functionConst]
+ complex operator +( complex c )
+         ^
+Assignment/CP_6.cpp:39:9: style: Variable 't.real' is assigned a value that is never used. [unreadVariable]
+ t.real = real + c.real;
+        ^
+Assignment/CP_6.cpp:40:9: style: Variable 't.imag' is assigned a value that is never used. [unreadVariable]
+ t.imag = imag + c.imag;
+        ^
+Assignment/CP_9.cpp:9:2: warning:inconclusive: Member variable 'circle::radius' is not initialized in the constructor. [uninitMemberVar]
+ circle( )
+ ^
+Assignment/CP_9.cpp:9:2: warning:inconclusive: Member variable 'circle::x' is not initialized in the constructor. [uninitMemberVar]
+ circle( )
+ ^
+Assignment/CP_9.cpp:9:2: warning:inconclusive: Member variable 'circle::y' is not initialized in the constructor. [uninitMemberVar]
+ circle( )
+ ^
+Assignment/CP_9.cpp:32:7: style:inconclusive: Technically the member function 'circle::showdata' can be const. [functionConst]
+ void showdata( )
+      ^
+Assignment/CP_9.cpp:18:30: style: Parameter 'c' can be declared with const [constParameter]
+ circle operator =( circle & c )
+                             ^
+Assignment/CP_9.cpp:25:19: style: Parameter 'c' can be declared with const [constParameter]
+ circle( circle & c )
+                  ^
+Assignment/arrayofstudent.cpp:4:1: style: The class 'student' does not have a constructor although it has private member variables. [noConstructor]
+class student
+^
+Assignment/arrayofstudent.cpp:8:17: style:inconclusive: Technically the member function 'student::showdata' can be const. [functionConst]
+           void showdata();
+                ^
+Assignment/arrayofstudent.cpp:30:15: note: Technically the member function 'student::showdata' can be const.
+void student::showdata()
+              ^
+Assignment/arrayofstudent.cpp:8:17: note: Technically the member function 'student::showdata' can be const.
+           void showdata();
+                ^
+Assignment/arrayofstudent.cpp:9:16: style:inconclusive: Technically the member function 'student::failornot' can be const. [functionConst]
+           int failornot();
+               ^
+Assignment/arrayofstudent.cpp:22:14: note: Technically the member function 'student::failornot' can be const.
+int student::failornot()
+             ^
+Assignment/arrayofstudent.cpp:9:16: note: Technically the member function 'student::failornot' can be const.
+           int failornot();
+               ^
+Assignment/friendclass.cpp:11:9: style:inconclusive: Technically the member function 'b::getA' can be const. [functionConst]
+    int getA()
+        ^
+Assignment/friendclass.cpp:15:9: style:inconclusive: Technically the member function 'b::getB' can be const. [functionConst]
+    int getB()
+        ^
+Assignment/new.cpp:5:7: warning: Either the condition '!p' is redundant or there is possible null pointer dereference: p. [nullPointerRedundantCheck]
+int (*p)[3];
+      ^
+Assignment/new.cpp:8:4: note: Assuming that condition '!p' is not redundant
+if(!p)
+   ^
+Assignment/new.cpp:5:7: note: Null pointer dereference
+int (*p)[3];
+      ^
+Assignment/new.cpp:18:9: warning: Either the condition '!p' is redundant or there is possible null pointer dereference: p. [nullPointerRedundantCheck]
+ delete p[1];
+        ^
+Assignment/new.cpp:8:4: note: Assuming that condition '!p' is not redundant
+if(!p)
+   ^
+Assignment/new.cpp:18:9: note: Null pointer dereference
+ delete p[1];
+        ^
+Assignment/new.cpp:8:5: error: Uninitialized variable: p [uninitvar]
+if(!p)
+    ^
+Assignment/personclass.cpp:15:7: style:inconclusive: Technically the member function 'person::showdata' can be const. [functionConst]
+ void showdata()
+      ^
+Assignment/scoperesolution.cpp:5:7: style: Local variable 'a' shadows outer variable [shadowVariable]
+{ int a;
+      ^
+Assignment/scoperesolution.cpp:3:5: note: Shadowed declaration
+int a=2;
+    ^
+Assignment/scoperesolution.cpp:5:7: note: Shadow variable
+{ int a;
+      ^
+Assignment/stduentclass.cpp:4:1: style: The class 'student' does not have a constructor although it has private member variables. [noConstructor]
+class student
+^
+Assignment/stduentclass.cpp:19:7: style:inconclusive: Technically the member function 'student::showdata' can be const. [functionConst]
+ void showdata()
+      ^
 CSES/DP/CountingTiling.cpp:40:16: style: Consider using std::accumulate algorithm instead of a raw loop. [useStlAlgorithm]
         answer = (answer + solve(n, m, i + 1, j)) % 1000000007;
                ^
@@ -142,5 +331,23 @@ Searching Algorithm/Binary Search/BinarySearch.cpp:6:36: style: The scope of the
 testing.cpp:5:11: style: Variable 'n' is assigned a value that is never used. [unreadVariable]
     int n = 0, a = 4;
           ^
+Assignment/CP_6.cpp:3:1: error: The one definition rule is violated, different classes/structs have the same name 'complex' [ctuOneDefinitionRuleViolation]
+class complex
+^
+Assignment/complex.cpp:5:1: note: The one definition rule is violated, different classes/structs have the same name 'complex'
+struct complex
+^
+Assignment/CP_6.cpp:3:1: note: The one definition rule is violated, different classes/structs have the same name 'complex'
+class complex
+^
+Assignment/arrayofstudent.cpp:4:1: error: The one definition rule is violated, different classes/structs have the same name 'student' [ctuOneDefinitionRuleViolation]
+class student
+^
+Assignment/stduentclass.cpp:4:1: note: The one definition rule is violated, different classes/structs have the same name 'student'
+class student
+^
+Assignment/arrayofstudent.cpp:4:1: note: The one definition rule is violated, different classes/structs have the same name 'student'
+class student
+^
 nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingIncludeSystem]
 
